@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F58723"
+    android:focusableInTouchMode="true"
+    android:gravity="fill_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+
+    <TextView
+        android:id="@+id/Disponibilidad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="DISPONIBILIDAD"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/labelTitBicis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Disponibilidad"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Bicis disponibles:    "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/labelTitHueco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelTitBicis"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/labelTitBicis"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Plazas disponibles:    "
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/labelTitBicis"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelNBicis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/labelTitBicis"
+            android:layout_below="@+id/labelTitBicis"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="X"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelNHueco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/labelNBicis"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Y"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCoger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="#F1ECDF"
+        android:layout_marginTop="50dp"
+        android:text="Alquilar" />
+
+    <Button
+        android:id="@+id/buttonDejar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonCoger"
+        android:layout_below="@+id/buttonCoger"
+        android:background="#F1ECDF"
+        android:layout_marginTop="15dp"
+        android:text="Devolver" />
+    
+     <TextView
+            android:id="@+id/labelNHueco"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:text="ESTACIÓN DE TREN"
+            android:textSize="20sp" />
+    
+    
+
+</RelativeLayout>

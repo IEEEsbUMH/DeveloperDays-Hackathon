@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     style="@style/image" >
+
+   <ListView
+       android:id="@+id/calle"
+       android:layout_width="match_parent"
+       android:layout_height="184dp"
+       android:textColor="#FFFFFF" >
+
+   </ListView>
+
+
+
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Puntos:"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:textColor="#FFFFFF" />
+
+<Spinner
+     android:textColor="#FFFFFF"
+        android:id="@+id/puntos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/puntos"
+          
+       />
+
+ <TextView
+      android:textColor="#FFFFFF"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de bicicletas?"
+       
+          />
+
+<Spinner
+        android:id="@+id/bike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/bike"
+          android:textColor="#FFFFFF"
+       />
+
+<Button
+    android:id="@+id/pesquisa"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Consultar" />
+</LinearLayout>

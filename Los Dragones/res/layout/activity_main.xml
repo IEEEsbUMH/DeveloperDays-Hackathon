@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1ECDF"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/labelNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:text="Nombre:    "
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/campoNombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelNombre"
+        android:layout_toRightOf="@id/labelNombre"
+        android:inputType="text"
+        android:padding="0dp"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/botonCrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/campoNombre"
+        android:text="CREAR"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/labelNombre"
+        android:layout_below="@id/campoNombre"
+        android:gravity="center_vertical"
+        android:text="Apellidos: "
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/campoApellido"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/campoNombre"
+        android:layout_alignTop="@id/labelApellido"
+        android:layout_toLeftOf="@id/botonCrear"
+        android:inputType="text"
+        android:padding="0dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/labelEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/labelApellido"
+        android:layout_below="@id/campoApellido"
+        android:gravity="center_vertical"
+        android:text="DNI: "
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/campoEdad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/campoNombre"
+        android:layout_alignTop="@id/labelEdad"
+        android:layout_toLeftOf="@id/botonCrear"
+        android:fitsSystemWindows="true"
+        android:inputType="numberDecimal"
+        android:padding="0dp"
+        android:textSize="10sp" />
+
+    <!-- <Button -->
+    <!-- android:id="@+id/botonOrdenNota" -->
+    <!-- style="?android:attr/buttonStyleSmall" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:text="Nota+" -->
+    <!-- android:textSize="10sp" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/botonOrdenAutor" -->
+    <!-- style="?android:attr/buttonStyleSmall" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignTop="@id/botonOrdenNota" -->
+    <!-- android:layout_toLeftOf="@id/botonOrdenNota" -->
+    <!-- android:text="Autor+" -->
+    <!-- android:textSize="10sp" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/botonOrdenTitulo" -->
+    <!-- style="?android:attr/buttonStyleSmall" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignTop="@id/botonOrdenAutor" -->
+    <!-- android:layout_toLeftOf="@id/botonOrdenAutor" -->
+    <!-- android:text="Título+" -->
+    <!-- android:textSize="10sp" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/botonGrabar" -->
+    <!-- style="?android:attr/buttonStyleSmall" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignTop="@id/botonOrdenAutor" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:text="Save" -->
+    <!-- android:textSize="9sp" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/botonCargar" -->
+    <!-- style="?android:attr/buttonStyleSmall" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignTop="@id/botonOrdenAutor" -->
+    <!-- android:layout_toRightOf="@id/botonGrabar" -->
+    <!-- android:text="Load" -->
+    <!-- android:textSize="9sp" /> -->
+
+    <TextView
+        android:id="@+id/labelLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelEdad"
+        android:layout_below="@+id/campoEdad"
+        android:layout_marginTop="14dp"
+        android:text="USUARIOS REGISTRADOS: "
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/listaUsuario"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/labelEdad"
+        android:layout_below="@+id/labelLista"
+        android:background="#F58723"
+        android:drawSelectorOnTop="false" >
+    </ListView>
+
+</RelativeLayout>

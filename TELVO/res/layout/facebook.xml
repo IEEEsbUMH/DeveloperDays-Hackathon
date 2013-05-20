@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:text="INGRESAR"
+        android:textColor="@android:color/white"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:text="Usar Facebook para iniciar sesión"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+    <ImageView 
+         android:id="@+id/teste"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/facebook_logo"
+        
+        />
+    
+   
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="73dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/login_button" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+</LinearLayout>

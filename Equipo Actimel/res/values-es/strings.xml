@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ilibici</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- NUESTRAS STRINGS  -->
+    <string name="nocaben">No puedes dejar más bicis si no caben</string>
+    <string name="nohay">No puedes coger bicis si no quedan</string>
+    <string name="existe">Ya existe este usuario</string>
+    <string name="wrong">Usuario o contraseña incorrectos</string>
+    <string name="pick">Coger bici</string>
+    <string name="soltar">Dejar bici</string>
+    <string name="info">Una aplicación desarrollada por el equipo actimel, formado por Jesús \'L\' Mena, Adrián \'Casei\' Mora, y Luís \'inmunitas\' Belzunce"</string>
+    <string name="newUser">Nuevo Usuario</string>
+    <string name="cercanas">Estaciones Cercanas</string>
+    <string name="about">Acerca De</string>
+    <string name="cogerdejar">Coger/Dejar bici</string>
+    <string name="name">Nombre de usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="aceptar">Aceptar</string>
+
+</resources>
